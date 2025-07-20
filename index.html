@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आपका डिजिटल विजन - वेब और ऐप डेवलपमेंट</title>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Define CSS Variables for theming (Retro Theme) */
+            --primary-color: #E67E22; /* Muted Orange */
+            --primary-light-color: #F39C12; /* Brighter Orange/Yellow */
+            --secondary-bg-color: #FDF5E6; /* Creamy White */
+            --text-color: #34495E; /* Dark Blue-Grey */
+            --light-text-color: #7F8C8D; /* Medium Grey */
+        }
+
+        /* Apply variables using Tailwind's arbitrary values or direct CSS */
+        .bg-primary { background-color: var(--primary-color); }
+        .text-primary { color: var(--primary-color); }
+        .border-primary { border-color: var(--primary-color); }
+        .hover\:bg-primary-light:hover { background-color: var(--primary-light-color); }
+        .text-secondary-bg { color: var(--secondary-bg-color); }
+        .bg-secondary-bg { background-color: var(--secondary-bg-color); }
+        .text-custom-dark { color: var(--text-color); }
+        .text-custom-light { color: var(--light-text-color); }
+
+        /* Custom styles for responsive images in portfolio */
+        .portfolio-img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+
+        /* Smooth scroll for navigation - not strictly needed without header but good practice */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Adjust padding for sections since header is removed */
+        section {
+            padding-top: 4rem; /* Default padding for sections */
+            padding-bottom: 4rem;
+        }
+        @media (min-width: 768px) {
+            section {
+                padding-top: 6rem; /* Larger padding on desktop */
+                padding-bottom: 6rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-custom-dark">
+
+    <!-- About Salesman Section (New Section) -->
+    <section id="salesman-about" class="py-16 md:py-24 bg-secondary-bg text-center">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-custom-dark mb-8">मेरे बारे में</h2>
+            <img src="image.jpg" alt="Bheru Singh" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg mb-6">
+            <h3 class="text-2xl font-semibold text-custom-dark mb-3">भेरू सिंह</h3>
+            <p class="text-lg text-custom-light leading-relaxed">
+                मैं राहुल शर्मा हूँ, और मैं आपकी डिजिटल ज़रूरतों को पूरा करने में मदद करने के लिए यहाँ हूँ। मुझे डिजिटल समाधानों में ग्राहकों की सहायता करने का गहरा अनुभव है। मैं आपके व्यावसायिक लक्ष्यों को समझता हूँ और आपको सर्वोत्तम वेब और ऐप डेवलपमेंट सेवाएं प्रदान करने के लिए प्रतिबद्ध हूँ। मैं हमेशा आपके सवालों का जवाब देने और आपकी ज़रूरतों के अनुसार सही समाधान खोजने के लिए तैयार रहता हूँ।
+            </p>
+        </div>
+    </section>
+
+    <!-- Hero Section (Adjusted for no header) -->
+    <section id="hero" class="relative bg-white py-24 md:py-32 flex items-center">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-custom-dark leading-tight mb-6">
+                आपका डिजिटल विजन, <span class="text-primary">हमारा विशेषज्ञ कोड।</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-custom-light max-w-3xl mx-auto mb-10">
+                शानदार, रिस्पॉन्सिव वेबसाइटों और सहज मोबाइल एप्लिकेशन के साथ आपके विचारों को हकीकत में बदलना।
+            </p>
+            <a href="#contact" class="inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary-light transition duration-300 ease-in-out transform hover:scale-105">
+                मुफ्त कोट प्राप्त करें
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-secondary-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-custom-dark mb-12">हमारी सेवाएं</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1: Web Development -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 4l-4 4 4 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-custom-dark mb-3 text-center">वेब डेवलपमेंट</h3>
+                    <p class="text-custom-light text-center">
+                        आपके व्यावसायिक ज़रूरतों के अनुसार रिस्पॉन्सिव, उच्च-प्रदर्शन वाली वेबसाइटें बनाना, साधारण लैंडिंग पेज से लेकर जटिल वेब एप्लिकेशन तक।
+                    </p>
+                </div>
+
+                <!-- Service Card 2: App Development -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-custom-dark mb-3 text-center">ऐप डेवलपमेंट</h3>
+                    <p class="text-custom-light text-center">
+                        iOS और Android के लिए नेटिव और क्रॉस-प्लेटफॉर्म मोबाइल एप्लिकेशन बनाना, सहज उपयोगकर्ता अनुभव और मजबूत कार्यक्षमता सुनिश्चित करना।
+                    </p>
+                </div>
+
+                <!-- Service Card 3: UI/UX Design -->
+                <div class="bg-white p-8 rounded-xl shadow-md transform transition duration-300 hover:scale-105">
+                    <div class="text-primary mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5a3 3 0 00-3-3H9a3 3 0 00-3 3v5m6 0h3.5c.552 0 1 .448 1 1v4.5c0 .552-.448 1-1 1H9.5a1 0 01-1-1V11c0-.552.448-1 1-1h3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-custom-dark mb-3 text-center">UI/UX डिज़ाइन</h3>
+                    <p class="text-custom-light text-center">
+                        उपयोगकर्ता अनुभव पर ध्यान केंद्रित करते हुए सहज और आकर्षक उपयोगकर्ता इंटरफेस बनाना, यह सुनिश्चित करना कि आपके डिजिटल उत्पाद उपयोग करने में आनंददायक हों।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-custom-dark mb-12">हमारा काम</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1: E-commerce Platform -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/E0E7FF/3B82F6?text=E-commerce+Platform" alt="E-commerce Platform" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">ई-कॉमर्स प्लेटफॉर्म</h3>
+                        <p class="text-custom-light">सुरक्षित भुगतान एकीकरण के साथ एक रिस्पॉन्सिव ऑनलाइन स्टोर।</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2: Fitness Tracking App -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/D1FAE5/059669?text=Fitness+App" alt="Fitness App" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">फिटनेस ट्रैकिंग ऐप</h3>
+                        <p class="text-custom-light">वर्कआउट और प्रगति को ट्रैक करने के लिए सहज मोबाइल ऐप।</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3: SaaS Dashboard UI -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/FFEDD5/F97316?text=SaaS+Dashboard" alt="SaaS Dashboard" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">SaaS डैशबोर्ड UI</h3>
+                        <p class="text-custom-light">एक SaaS एप्लिकेशन के लिए स्वच्छ और कार्यात्मक उपयोगकर्ता इंटरफ़ेस।</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4: Hotel Website -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/ADD8E6/00008B?text=Hotel+Website" alt="Hotel Website" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">होटल वेबसाइट</h3>
+                        <p class="text-custom-light">ऑनलाइन बुकिंग और गैलरी के साथ एक आकर्षक होटल वेबसाइट।</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5: Gaming App -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/C8A2C8/800080?text=Gaming+App" alt="Gaming App" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">गेमिंग ऐप</h3>
+                        <p class="text-custom-light">मनोरंजक गेमप्ले और सहज नियंत्रण के साथ एक मोबाइल गेमिंग ऐप।</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6: Khaata Manage App -->
+                <div class="bg-secondary-bg rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/FFE4E1/FF6347?text=Khaata+App" alt="Khaata Manage App" class="portfolio-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-custom-dark mb-2">खाता प्रबंधन ऐप</h3>
+                        <p class="text-custom-light">छोटे व्यवसायों के लिए आसान खाता और लेनदेन प्रबंधन ऐप।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-secondary-bg">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-custom-dark mb-8">हमारे बारे में</h2>
+            <p class="text-lg text-custom-light leading-relaxed">
+                हम भावुक डेवलपर्स और डिजाइनरों की एक समर्पित टीम हैं जो आपके विचारों को शक्तिशाली डिजिटल समाधानों में बदलने के लिए प्रतिबद्ध हैं। नवीनतम वेब और मोबाइल तकनीकों में विशेषज्ञता के साथ, हम उच्च-गुणवत्ता, स्केलेबल और उपयोगकर्ता-केंद्रित उत्पादों को वितरित करने पर ध्यान केंद्रित करते हैं जो विकास को गति देते हैं और उपयोगकर्ता जुड़ाव बढ़ाते हैं। हमारा लक्ष्य दीर्घकालिक साझेदारी बनाना और अभिनव प्रौद्योगिकी के माध्यम से व्यवसायों को सशक्त बनाना है।
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-custom-dark mb-12">संपर्क करें</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST" class="bg-secondary-bg p-8 rounded-xl shadow-md">
+                <!-- Honeypot for spam protection -->
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <div class="mb-6">
+                    <label for="name" class="block text-custom-dark text-lg font-medium mb-2">नाम</label>
+                    <input type="text" id="name" name="नाम" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light transition duration-200" placeholder="आपका नाम" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-custom-dark text-lg font-medium mb-2">ईमेल</label>
+                    <input type="email" id="email" name="ईमेल" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light transition duration-200" placeholder="your@example.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-custom-dark text-lg font-medium mb-2">संदेश</label>
+                    <textarea id="message" name="संदेश" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light transition duration-200" placeholder="अपने प्रोजेक्ट के बारे में बताएं..." required></textarea>
+                </div>
+                
+                <!-- Success message (optional, can be styled) -->
+                <p id="form-success-message" class="text-green-600 text-center mt-4 hidden">आपका संदेश सफलतापूर्वक भेज दिया गया है!</p>
+
+                <button type="submit" class="w-full bg-primary text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-primary-light transition duration-300 ease-in-out transform hover:scale-105">
+                    संदेश भेजें
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-dark text-secondary-bg py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 YourBrand. सर्वाधिकार सुरक्षित।</p>
+            <p class="mt-2">
+                <a href="#" class="hover:text-primary transition duration-200">गोपनीयता नीति</a> |
+                <a href="#" class="hover:text-primary transition duration-200">सेवा की शर्तें</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Add JavaScript to show a success message after form submission
+        // Note: Formspree usually handles redirects or shows its own success page.
+        // This is for client-side feedback if Formspree is configured to redirect back.
+        const form = document.querySelector('#contact form');
+        const successMessage = document.getElementById('form-success-message');
+
+        form.addEventListener('submit', function(event) {
+            // This prevents the default form submission if you want to handle it with AJAX,
+            // but Formspree works directly with the action attribute.
+            // If Formspree redirects back to this page with a success parameter,
+            // you could check for that parameter in the URL and show the message.
+            // For simplicity, Formspree's default behavior is often sufficient.
+            // If you want to stay on the page and show a message, you'd need to use fetch API
+            // to submit the form data to Formspree, and then show this message.
+            // Example using fetch (more complex, but keeps user on page):
+            /*
+            event.preventDefault();
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    successMessage.classList.remove('hidden');
+                    form.reset(); // Clear the form
+                } else {
+                    // Handle errors
+                    console.error('Form submission failed');
+                }
+            }).catch(error => {
+                console.error('Network error:', error);
+            });
+            */
+        });
+    </script>
+</body>
+</html>
